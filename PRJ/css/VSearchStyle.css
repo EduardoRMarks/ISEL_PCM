@@ -1,0 +1,62 @@
+#body{
+    background-color: #b8b8b8;
+}
+
+header{
+    font-family: 'Ubuntu';
+    color: #007bff;
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+p{
+    font-family: 'Ubuntu';
+    color: #000000;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#tools{
+    width: 550px; 
+    margin: auto; 
+    text-align: center;
+    
+    padding: 20px;
+    border-style: solid;
+    border-color: #007bff;
+    border-radius: 20px;
+    background-color: #EAF0F6;
+}
+
+.color{
+    width:35px;
+    height:35px;
+    border-radius: 40%;
+}
+
+#tools{
+    text-align: center;
+}
+
+#search{
+    font-family: 'Ubuntu';
+    width:70px;
+    height:30px; 
+    border-radius: 20%;
+}
+
+#canvas{
+    border-radius: 20px;
+    background-color: #3a3a3a;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    position: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;   
+}
+

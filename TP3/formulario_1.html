@@ -1,0 +1,193 @@
+<!-- 
+FORMULÁRIO - TP3 - 22/23 - PCM
+
+REALIZADO POR:
+43498 Roman Ishchuk
+45977 Eduardo Marques
+
+DOCENTE:
+Rui Jesus
+-->
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <title>Questionário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google fonts CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/aa43e2681b.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- My js-->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!--Dados Pessoais-->
+    <section id="dados_pessoais">
+        <div class="format">
+            <form name="fdpessoais" method="POST" onsubmit="validateForm(name,1,8)" action="formulario_2.html">
+                <fieldset>
+                    <!--Inicio da Caracterização-->
+                    <legend> Caracterização</legend>
+                    <article id="dp1">
+                        <h3>Indique a sua idade: *</h3>
+                        <input id="name1" type="radio" name="q1" value="menor 14">
+                        <label for="name1"> &lt 14 </label>
+
+                        <input id="name2" type="radio" name="q1" value="14-17">
+                        <label for="name2">14-17</label>
+
+                        <input id="name3" type="radio" name="q1" value="18-25">
+                        <label for="name3"> 18-25 </label>
+
+                        <input id="name4" type="radio" name="q1" value="26-35">
+                        <label for="name4"> 26-35 </label>
+
+                        <input id="name5" type="radio" name="q1" value="&gt 35" required>
+                        <label for="name4"> &gt 35 </label>
+                    </article>
+                    <!--Fim da Caracterização-->
+
+                    <!--Inicio do Género-->
+                    <article id="dp2">
+                        <h3>Indique o seu género: *</h3>
+                        <input id="masc" type="radio" name="q2" value="masculino">
+                        <label for="masc"> Masculino </label>
+
+                        <input id="fem" type="radio" name="q2" value="feminino" required>
+                        <label for="fem"> Feminino </label>
+                    </article>
+                    <!--Fim do Género-->
+
+                    <!--Inicio da frequencia de utilização da internet-->
+                    <article id="dp3">
+                        <h3>Com que frequência usa a internet</h3>
+                        <input id="freq1" type="radio" name="q3" value="Sempre online">
+                        <label for="freq1">Sempre online </label>
+
+                        <br>
+
+                        <input id="freq2" type="radio" name="q3" value="Muitas vezes por dia">
+                        <label for="name2">Muitas vezes ao dia</label>
+
+                        <br>
+
+                        <input id="freq3" type="radio" name="q3" value="Algumas vezes por dia">
+                        <label for="name3">Algumas vezes por dia</label>
+
+                        <br>
+
+                        <input id="fraq4" type="radio" name="q3" value="Poucas vezes por dia">
+                        <label for="name4">Poucas vezes por dia</label>
+
+                        <br>
+
+                        <input id="fraq5" type="radio" name="q3" value="Quase nunca por dia">
+                        <label for="name4">Quase nunca por dia</label>
+
+                        <br>
+
+                        <input id="freq6" type="radio" name="q3" value="Não utilizo todos os dias">
+                        <label for="name4">Não utilizo todos os dias</label>
+                    </article>
+                    <!--Fim da frequencia de utilização da internet-->
+
+                    <!--Inicio da tabela dos browsers-->
+                    <article id="dp4">
+                        <h3> Indique, por ordem de preferência, os Web Browsers que mais utiliza. Pode indicar 3.
+                            Utilize valores de 1 a 3, sendo 1 o mais preferido e 3 o menos **</h3>
+                        <table>
+                            <tr>
+                                <td>Chrome</td>
+                                <td><input onclick="FirstOption()" id="f0" type="radio" name="q4" value="0"></td>
+                                <td><input onclick="SecondOption()" id="s0" type="radio" name="q5" value="0"></td>
+                                <td><input onclick="ThirdOption()" id="t0" type="radio" name="q6" value="0"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Firefox</td>
+                                <td><input onclick="FirstOption()" id="f1" type="radio" name="q4" value="1"></td>
+                                <td><input onclick="SecondOption()" id="s1" type="radio" name="q5" value="1"></td>
+                                <td><input onclick="ThirdOption()" id="t1" type="radio" name="q6" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Opera</td>
+                                <td><input onclick="FirstOption()" id="f2" type="radio" name="q4" value="2"></td>
+                                <td><input onclick="SecondOption()" id="s2" type="radio" name="q5" value="2"></td>
+                                <td><input onclick="ThirdOption()" id="t2" type="radio" name="q6" value="2"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Opera GX</td>
+                                <td><input onclick="FirstOption()" id="f3" type="radio" name="q4" value="3"></td>
+                                <td><input onclick="SecondOption()" id="s3" type="radio" name="q5" value="3"></td>
+                                <td><input onclick="ThirdOption()" id="t3" type="radio" name="q6" value="3"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Safari</td>
+                                <td><input onclick="FirstOption()" id="f4" type="radio" name="q4" value="4"></td>
+                                <td><input onclick="SecondOption()" id="s4" type="radio" name="q5" value="4"></td>
+                                <td><input onclick="ThirdOption()" id="t4" type="radio" name="q6" value="4"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Microsoft Edge</td>
+                                <td><input onclick="FirstOption()" id="f5" type="radio" name="q4" value="5" required>
+                                </td>
+                                <td><input onclick="SecondOption()" id="s5" type="radio" name="qq5" value="5"></td>
+                                <td><input onclick="ThirdOption()" id="t5" type="radio" name="q6" value="5"></td>
+                            </tr>
+                        </table>
+                    </article>
+                    <!--Fim da tabela dos browsers-->
+
+                    <br>
+
+                    <!--Inicio outros sites-->
+                    <article id="dp5">
+                        <h3>Conhece outros sites de pesquisa de imagem?</h3>
+
+                        <input onclick="Write_Text()" id="n" type="radio" name="q7" value="não">
+                        <label for="name4">Não</label>
+
+                        <input onclick="Write_Text()" id="s" type="radio" name="q7" value="sim">
+                        <label for="name4">Sim</label>
+
+                        <input id="t" type="text" name="q8" value="" disabled>
+
+                    </article>
+                    <!--Fim outros sites-->
+
+                    <br>
+                    <p>* Questões de resposta obrigatória. <br>** Questão de resposta obrigatória (pelo menos uma
+                        preferência).</p>
+
+                    <div id="myProgress">
+                        <div id="myBar1"></div>
+                    </div>
+                    <!--Botão submint-->
+                    <div class="next">
+                        <input id="sub" type="submit" name="submit" value="Next">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

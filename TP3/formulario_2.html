@@ -1,0 +1,111 @@
+<!-- 
+FORMULÁRIO - TP3 - 22/23 - PCM
+
+REALIZADO POR:
+43498 Roman Ishchuk
+45977 Eduardo Marques
+
+DOCENTE:
+Rui Jesus
+-->
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <title>Questionário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google fonts CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/aa43e2681b.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- My js-->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!--Dados Pessoais-->
+    <section id="tarefas">
+        <div class="format">
+            <form name="fdtarefas" method="POST" onsubmit="validateForm(name,9,13)" action="formulario_3.html">
+                <fieldset>
+                    <!--Inicio da Caracterização-->
+                    <legend> Tarefas</legend>
+                    <p>Por favor, realiza as seguintes tarefas e descreva-nos os resultados obtidos.</p>
+
+                    <!--Tarefa 1-->
+                    <article id="dp6">
+                        <h3>Tarefa 1 - Explorar</h3>
+
+                        <p>Explore o site livremente e indique se encontrou algum erro ou se sentiu alguma dificuldade
+                            em perceber a funcionalidade das opções.</p>
+                        <textarea rows="3" cols="85" name="q9"></textarea>
+                    </article>
+                    <!--Fim da Tarefa 1-->
+
+                    <!--Tarefa 2-->
+                    <article id="dp7">
+                        <h3>Tarefa 2 - Pesquisa Categorias</h3>
+
+                        <p>Escolha a opção de pesquisa por palavra chave, selecione uma categoria à sua escolha e
+                            observe os resultados.</p>
+                        <p>Que dificuldades encontrou?</p>
+                        <textarea rows="3" cols="85" name="q10"></textarea>
+                    </article>
+                    <!--Fim da Tarefa 2-->
+
+                    <br>
+
+                    <!--Tarefa 3-->
+                    <article id="dp8">
+                        <h3>Tarefa 3 - Pesquisa Cor</h3>
+
+                        <p>Escolha a opção de pesquisa por cor dominante, selecione uma cor à sua escolha e observe os
+                            resultados.</p>
+                        <p>Que dificuldades encontrou?</p>
+                        <textarea rows="3" cols="85" name="q11"></textarea>
+                    </article>
+                    <!--Fim da Tarefa 3-->
+
+                    <!--Tarefa 4-->
+                    <article id="dp9">
+                        <h3>Tarefa 4 - Pesquisa Imagens Semelhantes</h3>
+
+                        <p>Escolha a opção de pesquisa por imagens semelhantes, selecione uma imagem à sua escolha e
+                            observe os resultados.</p>
+                        <p>Que dificuldades encontrou?</p>
+                        <textarea rows="3" cols="85" name="q12"></textarea>
+                    </article>
+                    <!--Fim da Tarefa 4-->
+
+                    <!--Mais adequado-->
+                    <article id="dp10">
+                        <p>Qual o tipo de pesquisa que acha mais adequado?</p>
+                        <textarea rows="3" cols="85" name="q13"></textarea>
+                    </article>
+                    <!--Fim mais adequado-->
+
+                    <div id="myProgress">
+                        <div id="myBar2"></div>
+                    </div>
+                    <!--Botão submint-->
+                    <div class="next">
+                        <input id="sub" type="submit" name="submit" value="Next">
+                    </div>
+                </fieldset>
+            </form>
+    </section>
+</body>
+
+</html>

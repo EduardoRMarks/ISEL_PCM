@@ -1,0 +1,46 @@
+/**FOTOPRINT - TP4 - 22/23 - PCM
+
+REALIZADO POR:
+43498 Roman Ishchuk
+45977 Eduardo Marques
+
+DOCENTE:
+Rui Jesus**/
+#select {
+    position: relative;
+    top: 30px;
+    border: 2px;
+    cursor:crosshair;
+
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+#draw {
+    position: relative;
+    top: 40px;
+    cursor:crosshair;
+
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#buttons{
+    position: relative;
+    top: 1.8rem;
+    border: 2px;
+    margin-left: 34rem;
+
+
+}
+
+body {
+     background-color: rgb(100, 163, 205);
+ }
+

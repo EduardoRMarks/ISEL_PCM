@@ -1,0 +1,340 @@
+<!-- 
+FORMULÁRIO - TP3 - 22/23 - PCM
+
+REALIZADO POR:
+43498 Roman Ishchuk
+45977 Eduardo Marques
+
+DOCENTE:
+Rui Jesus
+-->
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <title>Questionário</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google fonts CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oswald:wght@300&family=Roboto:wght@300;400&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/aa43e2681b.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- My js-->
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!--Dados Pessoais-->
+    <section id="Avaliacao_Global">
+        <div class="format">
+            <form name="fdglobal" method="POST" onsubmit="validateForm(name,14,23)" action="obrigado.html">
+                <fieldset>
+                    <!--Experiência de utilização-->
+                    <legend>Experiência de utilização</legend>
+                    <article id="dp11">
+                        <b>1 - Para cada par de adjetivos, selecione a opção que melhor descreve a sua experiência de
+                            utilização deste site.</b>
+                        <table>
+                            <tr>
+                                <td>Horrível</td>
+                                <td><input id="hor1" type="radio" name="q14" value="1">
+                                </td>
+                                <td><input id="hor2" type="radio" name="q14" value="2">
+                                </td>
+                                <td>
+                                    <input id="hor3" type="radio" name="q14" value="3">
+                                </td>
+                                <td>
+                                    <input id="hor4" type="radio" name="q14" value="4">
+                                </td>
+                                <td>
+                                    <input id="hor5" type="radio" name="q14" value="5">
+                                </td>
+                                <td>
+                                    <input id="hor6" type="radio" name="q14" value="6">
+                                </td>
+                                <td>
+                                    <input id="hor7" type="radio" name="q14" value="7">
+                                </td>
+                                <td>Fantástica</td>
+                            </tr>
+                            <tr>
+                                <td>Aborrecida</td>
+                                <td><input id="estim1" type="radio" name="q15" value="1">
+                                </td>
+                                <td><input id="estim2" type="radio" name="q15" value="2">
+                                </td>
+                                <td>
+                                    <input id="estim3" type="radio" name="q15" value="2">
+                                </td>
+                                <td>
+                                    <input id="estim4" type="radio" name="q15" value="2">
+                                </td>
+                                <td>
+                                    <input id="estim5" type="radio" name="q15" value="2">
+                                </td>
+                                <td>
+                                    <input id="estim6" type="radio" name="q15" value="2">
+                                </td>
+                                <td>
+                                    <input id="estim7" type="radio" name="q15" value="2">
+                                </td>
+                                <td>Estimulante</td>
+                            </tr>
+                            <tr>
+                                <td>Frustrante</td>
+                                <td><input id="grat1" type="radio" name="q16" value="1">
+                                    <label for="grat1"></label>
+                                </td>
+                                <td><input id="grat2" type="radio" name="q16" value="2">
+                                </td>
+                                <td>
+                                    <input id="grat3" type="radio" name="q16" value="3">
+                                </td>
+                                <td>
+                                    <input id="grat4" type="radio" name="q16" value="4">
+                                </td>
+                                <td>
+                                    <input id="grat5" type="radio" name="q16" value="5">
+                                </td>
+                                <td>
+                                    <input id="grat6" type="radio" name="q16" value="6">
+                                </td>
+                                <td>
+                                    <input id="grat7" type="radio" name="q16" value="7">
+                                </td>
+                                <td>Gratificante</td>
+                            </tr>
+                            <tr>
+                                <td>Difícil</td>
+                                <td><input id="dif1" type="radio" name="q17" value="1">
+                                </td>
+                                <td><input id="dif2" type="radio" name="q17" value="2">
+                                </td>
+                                <td>
+                                    <input id="dif3" type="radio" name="q17" value="3">
+                                </td>
+                                <td>
+                                    <input id="dif4" type="radio" name="q17" value="4">
+                                </td>
+                                <td>
+                                    <input id="dif5" type="radio" name="q17" value="5">
+                                </td>
+                                <td>
+                                    <input id="dif6" type="radio" name="q17" value="6">
+                                </td>
+                                <td>
+                                    <input id="dif7" type="radio" name="q17" value="7">
+                                </td>
+                                <td>Fácil</td>
+                            </tr>
+                        </table>
+                    </article>
+                    <!--Fim da Experiência de utilização-->
+
+                    <br>
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp12">
+                        <b>2 - Como classifica os resultados obtidos pela pesquisa por categoria (1 significa “Maus” e 5
+                            significa “Excelentes”)?*
+                        </b>
+                        <br>
+                        <label id="cima" for="av21">Mau<br>
+                            <input id="av21" type="radio" name="q18" value="1">
+                            <label for="av21">1</label>
+                        </label>
+
+                        <input id="av22" type="radio" name="q18" value="2">
+                        <label for="av22">2</label>
+
+
+                        <input id="av23" type="radio" name="q18" value="3">
+                        <label for="av23">3</label>
+
+
+                        <input id="av24" type="radio" name="q18" value="4">
+                        <label for="av24">4</label>
+
+                        <label id="cima" for="av25">Excelentes<br>
+                            <input id="av25" type="radio" name="q18" value="5" required>
+                            <label for="av25">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp13">
+                        <b>3 - Como classifica o resultado obtido pela pesquisa por Cor (1 significa “Mau” e 5 significa
+                            “Excelente”)? *
+                        </b>
+                        <br>
+                        <label id="cima" for="av31">Mau<br>
+                            <input id="av31" type="radio" name="q19" value="1">
+                            <label for="av31">1</label>
+                        </label>
+
+                        <input id="av32" type="radio" name="q19" value="2">
+                        <label for="av32">2</label>
+
+
+                        <input id="av33" type="radio" name="q19" value="3">
+                        <label for="av33">3</label>
+
+
+                        <input id="av34" type="radio" name="q19" value="4">
+                        <label for="av34">4</label>
+
+                        <label id="cima" for="av35">Excelentes<br>
+                            <input id="av35" type="radio" name="q19" value="5" required>
+                            <label for="av35">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp14">
+                        <b>4 - Como classifica o resultado obtido pela pesquisa por Imagens Semelhantes (1 significa
+                            “Mau” e 5 significa “Excelente”)? *
+                        </b>
+                        <br>
+                        <label id="cima" for="av41">Mau<br>
+                            <input id="av41" type="radio" name="q20" value="1">
+                            <label for="av41">1</label>
+                        </label>
+
+                        <input id="av42" type="radio" name="q20" value="2">
+                        <label for="av42">2</label>
+
+
+                        <input id="av43" type="radio" name="q20" value="3">
+                        <label for="av43">3</label>
+
+
+                        <input id="av44" type="radio" name="q20" value="4">
+                        <label for="av44">4</label>
+
+                        <label id="cima" for="av45">Excelentes<br>
+                            <input id="av45" type="radio" name="q20" value="5" required>
+                            <label for="av45">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp15">
+                        <b>5 - Como classifica a utilidade da pesquisa por Imagens Semelhantes (1 significa “Pouca” e 5
+                            significa “Muita”)? *
+                        </b>
+                        <br>
+                        <label id="cima" for="av51">Pouca<br>
+                            <input id="av51" type="radio" name="q21" value="1">
+                            <label for="av51">1</label>
+                        </label>
+
+                        <input id="av52" type="radio" name="q21" value="2">
+                        <label for="av52">2</label>
+
+
+                        <input id="av53" type="radio" name="q21" value="3">
+                        <label for="av53">3</label>
+
+
+                        <input id="av54" type="radio" name="q21" value="4">
+                        <label for="av54">4</label>
+
+                        <label id="cima" for="av55">Muita<br>
+                            <input id="av55" type="radio" name="q21" value="5" required>
+                            <label for="av55">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp16">
+                        <b>6 - Como classifica o sistema de navegação do site (1 significa “Mau” e 5 significa
+                            “Excelente”)? *
+                        </b>
+                        <br>
+                        <label id="cima" for="av61">Mau<br>
+                            <input id="av61" type="radio" name="q22" value="1">
+                            <label for="av61">1</label>
+                        </label>
+
+                        <input id="av62" type="radio" name="q22" value="2">
+                        <label for="av62">2</label>
+
+
+                        <input id="av63" type="radio" name="q22" value="3">
+                        <label for="av63">3</label>
+
+
+                        <input id="av64" type="radio" name="q22" value="4">
+                        <label for="av64">4</label>
+
+                        <label id="cima" for="av65">Excelentes<br>
+                            <input id="av65" type="radio" name="q22" value="5" required>
+                            <label for="av65">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <!--Resultado pesquisa por categoria-->
+                    <article id="dp13">
+                        <b>7 - Como classifica o design do site (1 significa “Mau” e 5 significa “Excelente”)? *
+                        </b>
+                        <br>
+                        <label id="cima" for="av31">Mau<br>
+                            <input id="av31" type="radio" name="q23" value="1">
+                            <label for="av31">1</label>
+                        </label>
+
+                        <input id="av32" type="radio" name="q23" value="2">
+                        <label for="av32">2</label>
+
+
+                        <input id="av33" type="radio" name="q23" value="3">
+                        <label for="av33">3</label>
+
+
+                        <input id="av34" type="radio" name="q23" value="4">
+                        <label for="av34">4</label>
+
+                        <label id="cima" for="av35">Excelentes<br>
+                            <input id="av35" type="radio" name="q23" value="5" required>
+                            <label for="av35">5</label>
+                        </label>
+                    </article>
+                    <!--Fim do resultado pesquisa por categoria-->
+
+                    <br>
+
+                    <p>* Questões de resposta obrigatória. <br>** Questão de resposta obrigatória (pelo menos uma
+                        preferência).</p>
+
+                    <div id="myProgress">
+                        <div id="myBar3"></div>
+                    </div>
+
+                    <!--Botão submint-->
+                    <div class="next">
+                        <input id="sub" type="submit" name="submit" value="submit">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

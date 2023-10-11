@@ -1,0 +1,134 @@
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #61ad91;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;
+  }
+  
+  .btn:hover {background-color: #007BFF}
+  
+  .btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    background: #332e36;
+    transition: all 0.5s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    padding: 1px 10px;
+}
+
+nav ul li a {
+    font-family: 'Ubuntu', sans-serif;
+    transition: all .25s ease;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #7aaecc;
+}
+
+nav ul li:hover>ul {
+    display: block;
+    position: absolute;
+    background-color: #7aaecc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 1);
+    z-index: 1;
+}
+
+nav ul li:hover>ul {
+    margin: 20px;
+    padding: 0px;
+}
+
+nav ul li:hover>ul li {
+    float: none;
+    display: block;
+}
+
+nav ul li:hover>ul li a {
+    color: #000000;
+    min-width: 500px;
+}
+
+nav ul li:hover>ul li a:hover {
+    color: #307dc0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+    font-family: 'Noto Serif', serif;
+    color: #007BFF;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Noto Serif', serif;
+    color: rgb(13, 175, 72);
+    text-align: center;
+    font-size: 2rem;
+}
+
+img {
+    float: left;
+}
+
+.color-picture {
+    background: #6C757D;
+}
+
+.return a{
+    font-size: 30px;
+}
+
+.color-picture {
+    background: url('/TP1/imgs/background_v3.jpg')center/cover fixed;
+}
